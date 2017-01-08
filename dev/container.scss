@@ -1,0 +1,90 @@
+// Font-facing mixin
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+// Main variables
+@include font-face('FoundersGroteskWeb-Bold', 'FoundersGroteskWeb-Bold', 'FoundersGroteskWeb');
+$WebBold: FoundersGroteskWeb-Bold, sans-serif;
+@include font-face('FoundersGroteskWeb-BoldItalic', 'FoundersGroteskWeb-BoldItalic', 'FoundersGroteskWeb');
+$WebBoldItalic: FoundersGroteskWeb-BoldItalic, sans-serif;
+
+@include font-face('FoundersGroteskWeb-Semibold', 'FoundersGroteskWeb-Semibold', 'FoundersGroteskWeb');
+$WebSemibold: FoundersGroteskWeb-Semibold, sans-serif;
+@include font-face('FoundersGroteskWeb-SemiboldItalic', 'FoundersGroteskWeb-SemiboldItalic', 'FoundersGroteskWeb');
+$WebSemiboldItalic: FoundersGroteskWeb-SemiboldItalic, sans-serif;
+
+@include font-face('FoundersGroteskWeb-Light', 'FoundersGroteskWeb-Light', 'FoundersGroteskWeb');
+$WebLight: FoundersGroteskWeb-Light, sans-serif;
+@include font-face('FoundersGroteskWeb-LightItalic', 'FoundersGroteskWeb-LightItalic', 'FoundersGroteskWeb');
+$WebLightItalic: FoundersGroteskWeb-LightItalic, sans-serif;
+
+@include font-face('FoundersGroteskWeb-Medium', 'FoundersGroteskWeb-Medium', 'FoundersGroteskWeb');
+$WebMedium: FoundersGroteskWeb-Medium, sans-serif;
+@include font-face('FoundersGroteskWeb-MediumItalic', 'FoundersGroteskWeb-MediumItalic', 'FoundersGroteskWeb');
+$WebMediumItalic: FoundersGroteskWeb-MediumItalic, sans-serif;
+
+@include font-face('FoundersGroteskWeb-Regular', 'FoundersGroteskWeb-Regular', 'FoundersGroteskWeb');
+$WebRegular: FoundersGroteskWeb-Regular, sans-serif;
+@include font-face('FoundersGroteskWeb-RegularItalic', 'FoundersGroteskWeb-RegularItalic', 'FoundersGroteskWeb');
+$WebRegularItalic: FoundersGroteskWeb-RegularItalic, sans-serif;
+
+
+$primary-color: #333;
+$selected-color: #111;
+$border: #cacaca;
+$background: #dedede;
+
+
+#header {
+  margin-left: 25px;
+
+  >p {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+#innerContainer {
+  font-family: FoundersGroteskWeb-Regular;
+  padding-left: 20px;
+
+  #fontSlider {
+    margin-left: 20px;
+  }
+  #fontSlider .slider-selection {
+    background: #bababa;
+  }
+
+}
+
+#textContainer {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-top: 15px;
+  margin-top: 5px;
+  background: $background;
+}
+
+
+// End of stylesheet

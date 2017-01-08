@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="Selector">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@Qu - Font Selector</title>
+    <meta name="description" content="Font selector">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="/styles/vendors.css">
+    <script src="/scripts/angular.js"></script>
+
+    <!-- Angular controllers bundle -->
+    <script src="/scripts/Build.js"></script>
+
+    <!-- Custom styles bundle       -->
+    <link href="/styles/Main.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<!-- Page layout && functionality section --------------------------------------------------------->
+
+    <!-- Main container -->
+    <div class="container-fluid" id="main" ng-controller="fontSelector">
+
+      <!-- Header -->
+      <div class="row" id="header" ng-init="setProp()">
+        <h1>Font selector:</h1>
+        <p>{{fontFamily}}</p>
+        <p>{{fontStyle}}</p>
+        <p>{{fontStretch}}</p>
+      </div>
+
+      <!-- Selector container -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-10" id="innerContainer">
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-info">Font Style</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li ng-click="setStyle('normal')"><a href="#">Normal</a></li>
+              <li ng-click="setStyle('italic')"><a href="#">Italic</a></li>
+              <li ng-click="setStyle('oblique')"><a href="#">Oblique</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-info">Font stretch</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li ng-click="setStretch('extra-condensed')"><a href="#">Extra-condensed</a></li>
+              <li ng-click="setStretch('condensed')"><a href="#">Condensed</a></li>
+              <li ng-click="setStretch('semi-condensed')"><a href="#">Semi-condensed</a></li>
+              <li ng-click="setStretch('normal')"><a href="#">Normal</a></li>
+              <li ng-click="setStretch('semi-expanded')"><a href="#">Semi-expanded</a></li>
+              <li ng-click="setStretch('expanded')"><a href="#">Expanded</a></li>
+              <li ng-click="setStretch('extra-expanded')"><a href="#">Extra-expanded</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-success">Font family variant</button>
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li ng-click="setFont('FoundersGroteskWeb-Bold')"><a href="#">FGWeb-Bold</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-BoldItalic')"><a href="#">FGWeb-BoldItalic</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-Semibold')"><a href="#">FGWeb-Semibold</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-SemiboldItalic')"><a href="#">FGWeb-SemiboldItalic</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-Medium')"><a href="#">FGWeb-Medium</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-MediumItalic')"><a href="#">FGWeb-MediumItalic</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-Regular')"><a href="#">FGWeb-Regular</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-RegularItalic')"><a href="#">FGWeb-RegularItalic</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-Light')"><a href="#">FGWeb-Light</a></li>
+              <li ng-click="setFont('FoundersGroteskWeb-LightItalic')"><a href="#">FGWeb-LightItalic</a></li>
+            </ul>
+          </div>
+
+          <input id="slider" data-slider-id="fontSlider" type="text" data-slider-min="8" data-slider-max="50" data-slider-step="1" data-slider-value="35">
+
+          <div id="textContainer">
+            <p style="font-weight: 100"><span>100 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 200"><span>200 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 300"><span>300 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 400"><span>400 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 500"><span>500 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 600"><span>600 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 700"><span>700 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 800"><span>800 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+            <p style="font-weight: 900"><span>900 -> &nbsp;</span>Lorem ipsum dolor sit amet, consectetur 1 23</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- End of selector container -->
+
+    </div>
+    <!-- End of main container -->
+
+<!-- Scripts && Footer section -------------------------------------------------------------------->
+
+    <script src="/scripts/vendors.js"></script>
+
+  </body>
+</html>

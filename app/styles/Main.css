@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "FoundersGroteskWeb-Bold";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Bold.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Bold.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Bold.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Bold.svg#FoundersGroteskWeb-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-BoldItalic";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-BoldItalic.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-BoldItalic.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-BoldItalic.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-BoldItalic.svg#FoundersGroteskWeb-BoldItalic") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-Semibold";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Semibold.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Semibold.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Semibold.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Semibold.svg#FoundersGroteskWeb-Semibold") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-SemiboldItalic";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-SemiboldItalic.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-SemiboldItalic.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-SemiboldItalic.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-SemiboldItalic.svg#FoundersGroteskWeb-SemiboldItalic") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-Light";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Light.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Light.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Light.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Light.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Light.svg#FoundersGroteskWeb-Light") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-LightItalic";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-LightItalic.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-LightItalic.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-LightItalic.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-LightItalic.svg#FoundersGroteskWeb-LightItalic") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-Medium";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Medium.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Medium.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Medium.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Medium.svg#FoundersGroteskWeb-Medium") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-MediumItalic";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-MediumItalic.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-MediumItalic.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-MediumItalic.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-MediumItalic.svg#FoundersGroteskWeb-MediumItalic") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-Regular";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Regular.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Regular.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Regular.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-Regular.svg#FoundersGroteskWeb-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "FoundersGroteskWeb-RegularItalic";
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-RegularItalic.eot");
+  src: url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-RegularItalic.woff") format("woff"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-RegularItalic.ttf") format("truetype"), url("fonts/FoundersGroteskWeb/FoundersGroteskWeb-RegularItalic.svg#FoundersGroteskWeb-RegularItalic") format("svg");
+}
+
+#header {
+  margin-left: 25px;
+}
+
+#header > p {
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+#innerContainer {
+  font-family: FoundersGroteskWeb-Regular;
+  padding-left: 20px;
+}
+
+#innerContainer #fontSlider {
+  margin-left: 20px;
+}
+
+#innerContainer #fontSlider .slider-selection {
+  background: #bababa;
+}
+
+#textContainer {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-top: 15px;
+  margin-top: 5px;
+  background: #dedede;
+}
